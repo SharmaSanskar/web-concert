@@ -1,0 +1,91 @@
+#about {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    rgb(144, 78, 149),
+    rgb(195, 55, 100)
+  );
+}
+
+.about-container {
+  min-height: 60vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-title {
+  color: $secondary;
+  padding: 2rem 0;
+}
+
+.about-content {
+  @include flex(center, space-between, row);
+
+  .about-description {
+    flex: 1.5;
+    height: 40vh;
+    background-color: rgba(51, 8, 103, 0.25);
+    color: $primary;
+    padding: 2rem;
+  }
+
+  .about-img {
+    flex: 1;
+    height: 40vh;
+    margin-left: 5rem;
+  }
+}
+
+.artists-container {
+  min-height: 40vh;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.artists-title {
+  color: $secondary;
+  padding: 1.4rem 0;
+}
+
+.artists-showcase {
+  @include flex(center, space-evenly, row);
+  flex-wrap: wrap;
+}
+
+.artist {
+  margin: 1rem;
+
+  img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: auto;
+  }
+  h4 {
+    color: $primary;
+    padding: 0.6rem 0;
+
+    .hl {
+      color: $secondary;
+      text-decoration: underline dotted 0.2rem;
+    }
+  }
+}
+
+// Media queries
+@media (max-width: 800px) {
+  .about-content {
+    display: block;
+
+    .about-description {
+      width: 100%;
+      height: auto;
+    }
+
+    .about-img {
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+}

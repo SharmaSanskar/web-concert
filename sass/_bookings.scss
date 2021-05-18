@@ -1,0 +1,47 @@
+#bookings {
+  @include flex(center, center, row);
+  min-height: 60vh;
+  background: linear-gradient(
+    to bottom left,
+    rgb(195, 55, 100),
+    rgb(29, 37, 113)
+  );
+}
+
+.bookings-img {
+  flex: 1;
+  height: 60vh;
+}
+
+.bookings-content {
+  flex: 1;
+  height: 60vh;
+  @include flex(flex-start, space-evenly, column);
+  padding: 3rem 4rem;
+
+  .bookings-title {
+    color: $secondary;
+  }
+
+  .bookings-info {
+    color: $primary;
+    font-weight: 500;
+    line-height: 1.6;
+    strong {
+      color: $secondary;
+      text-decoration: underline dotted 0.2rem;
+    }
+  }
+}
+
+// Media queries
+@media (max-width: 800px) {
+  #bookings {
+    display: block;
+  }
+  .bookings-content {
+    text-align: center;
+    @include flex(center, space-between, column);
+    height: 50vh;
+  }
+}

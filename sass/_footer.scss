@@ -1,0 +1,36 @@
+footer {
+  @include flex(center, space-between, row);
+  background-color: rgb(51, 8, 103);
+  color: white;
+  min-height: 10vh;
+  padding: 1rem 5% 1rem 5%;
+  margin: 0 auto;
+  h3 {
+    color: $primary;
+  }
+
+  .social-links a {
+    margin-left: 2rem;
+  }
+}
+
+// Media queries
+@media (max-width: 800px) {
+  footer {
+    @include flex(center, center, column);
+    text-align: center;
+
+    h3 {
+      order: 2;
+    }
+
+    .social-links {
+      @include flex(center, space-evenly, row);
+      width: 50%;
+    }
+
+    .social-links a {
+      margin: 0 0 0.8rem 0;
+    }
+  }
+}

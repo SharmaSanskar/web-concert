@@ -1,0 +1,64 @@
+#contact {
+  min-height: 60vh;
+  background: linear-gradient(rgba(51, 8, 103, 0.5), rgba(51, 8, 103, 0.7)),
+    url('/img/contact.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.contact-title {
+  padding: 2rem;
+  color: $secondary;
+}
+
+.contact-form {
+  @include flex(center, center, column);
+  label {
+    color: $secondary;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  input[type='text'] {
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    width: 20%;
+    color: $primary;
+    background: rgba(51, 8, 103, 0.5);
+    border: 1px solid $primary;
+    font-size: 1rem;
+
+    &:focus {
+      border: 1px solid $primary;
+      outline: 2px solid $secondary;
+    }
+  }
+
+  textarea {
+    padding: 0.4rem;
+    color: $primary;
+    background: rgba(51, 8, 103, 0.5);
+    border: 1px solid $primary;
+    font-size: 1rem;
+    margin: 0 2rem;
+    &:focus {
+      border: 1px solid $primary;
+      outline: 2px solid $secondary;
+    }
+  }
+
+  button {
+    margin: 2rem;
+  }
+}
+
+// Media queries
+@media (max-width: 800px) {
+  .contact-form {
+    input[type='text'] {
+      width: 50%;
+    }
+  }
+}

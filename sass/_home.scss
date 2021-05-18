@@ -1,0 +1,69 @@
+.home {
+  min-height: 85vh;
+  width: 100%;
+  position: relative;
+  color: $primary;
+
+  @include flex(flex-start, center, row);
+
+  .hero-img {
+    width: 60%;
+    height: 70vh;
+    position: relative;
+    z-index: -1;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .hero-title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-weight: 500;
+    font-size: clamp(2.2rem, calc(5vw+1rem), 2.4rem);
+    line-height: 1.4;
+    strong {
+      font-weight: 900;
+    }
+
+    .hl {
+      font-weight: 900;
+      color: $secondary;
+    }
+  }
+
+  .action-btn {
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+  }
+}
+
+// Media queries
+@media (max-width: 800px) {
+  .home {
+    .hero-img {
+      margin-top: 12rem;
+      height: 50vh;
+      width: 60%;
+    }
+    .hero-title {
+      text-align: center;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+    .action-btn {
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

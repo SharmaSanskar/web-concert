@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- JavaScript -->
+    <script defer src="./app.js"></script>
+    <title>Zenith | Music Festival</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">Zenith</h1>
+
+      <!-- Navbar -->
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#bookings">Bookings</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section class="home">
+        <h2 class="hero-title">
+          The <strong>BIGGEST</strong><br />
+          music festival<br />
+          of this <span class="hl">SUMMER</span>
+        </h2>
+        <div class="hero-img">
+          <img src="./img/hero.jpg" alt="concert" />
+          <div class="overlay"></div>
+        </div>
+        <button class="action-btn">
+          Book Now <i class="fas fa-chevron-right"></i>
+        </button>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="about-container">
+          <h2 class="about-title">What is Zenith?</h2>
+          <div class="about-content">
+            <div class="about-description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                expedita deserunt, adipisci fuga doloremque sunt voluptates.
+                Eaque rerum minima amet.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                hic illo dignissimos! Cumque fuga dolore suscipit facere sit
+                delectus rem porro maiores vitae incidunt, voluptas similique
+                temporibus, perferendis illo accusamus.
+              </p>
+            </div>
+            <div class="about-img">
+              <img src="./img/about.jpg" alt="concert" />
+            </div>
+          </div>
+        </div>
+
+        <div class="artists-container">
+          <h2 class="artists-title">Artists</h2>
+          <div class="artists-showcase">
+            <div class="artist">
+              <img src="./img/ed.jpg" alt="artist" />
+              <h4>Ed <span class="hl">Sheeran</span></h4>
+            </div>
+            <div class="artist">
+              <img src="./img/ariana.jpg" alt="artist" />
+              <h4>Ariana <span class="hl">Grande</span></h4>
+            </div>
+            <div class="artist">
+              <img src="./img/coldplay.jpg" alt="artist" />
+              <h4>Cold<span class="hl">play</span></h4>
+            </div>
+            <div class="artist">
+              <img src="./img/taylor.jpg" alt="artist" />
+              <h4>Taylor <span class="hl">Swift</span></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bookings section -->
+      <section id="bookings">
+        <div class="bookings-img">
+          <img src="./img/bookings.jpg" alt="concert" />
+        </div>
+        <div class="bookings-content">
+          <h2 class="bookings-title">Wanna join the party?</h2>
+          <div class="bookings-info">
+            <h3><strong>Venue</strong> : Jio Gardens, BKC</h3>
+            <h3><strong>Date</strong> : 4th May, 2021</h3>
+          </div>
+          <button class="action-btn">
+            Book Now <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact">
+        <h2 class="contact-title">Have any questions?</h2>
+        <form class="contact-form">
+          <label for="email">Your email</label>
+          <input type="text" name="email" id="email" />
+          <label for="query">Your query</label>
+          <textarea name="query" id="query" cols="30" rows="5"></textarea>
+          <button>Send</button>
+        </form>
+      </section>
+
+      <footer>
+        <h3>Zenith &copy; 2020-2069</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </footer>
+    </main>
+    <div id="slider"></div>
+  </body>
+</html>
